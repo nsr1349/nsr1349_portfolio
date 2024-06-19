@@ -36,14 +36,15 @@ export default function RootLayout({
             </ul>
           </div>
           <div className="flex-grow">
-            <nav className="bg-green-300">
-              <Link href="/It'sMe">it&apos;s Me</Link>
+            <nav className="bg-green-300 flex gap-3">
+              <Link href="/">it&apos;s Me</Link>
               <Link href="/portfolio">Portfolio</Link>
               <Link href="/about">About</Link>
             </nav>
-            {children}
+            <main className="bg-purple-950">
+              {children}
+            </main>
           </div>
-          
         </div>
         
         
