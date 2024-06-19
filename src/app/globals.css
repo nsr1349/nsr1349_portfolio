@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --dark: #141517;
+    --darkSub: #1E2022;
+    --darkSubHover: #2C2B30;
+    --point: #00FF99;
+}
+
+body {
+    background-color: var(--dark);
+    color: white;
+}
