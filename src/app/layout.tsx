@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Nav from "./components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,11 +36,7 @@ export default function RootLayout({
             </ul>
           </div>
           <div className="flex-grow">
-            <nav className="bg-green-300 flex gap-3">
-              <Link href="/">it&apos;s Me</Link>
-              <Link href="/portfolio">Portfolio</Link>
-              <Link href="/about">About</Link>
-            </nav>
+            <Nav/>
             <main className="bg-purple-950">
               {children}
             </main>
