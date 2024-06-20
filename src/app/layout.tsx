@@ -18,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex mt-20 mx-auto gap-10 w-[95%] max-w-[1600px] bg-blue-500">
-          <div className="bg-slate-400 p-5">
+        <div className="flex mt-20 mx-auto gap-10 w-[95%] max-w-[1200px]">
+          <div className="p-5">
             <div>
               아바타
             </div>
@@ -35,9 +35,10 @@ export default function RootLayout({
               </li>
             </ul>
           </div>
+          <div className="border-gray-800 h-[700px] border-r-[.1px]"></div>
           <div className="flex-grow">
             <Nav/>
-            <main className="bg-purple-950">
+            <main>
               {children}
             </main>
           </div>
